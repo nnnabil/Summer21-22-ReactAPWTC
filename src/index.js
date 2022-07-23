@@ -1,13 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import Hello from './Components/Hello';
+import Home from './Components/Home';
+import Profile from './Components/Profile';
+import Contact from './Components/Contact';
+import Foot from "./Components/Foot";
+import Head from './Components/Head';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import ProductDetail from './Components/ProductDetail';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+     <Router>
+      <Head/>
+      <Routes>
+        <Route exact path='/' element={<Home/>} />
+        <Route exact path='/profile' element={<Profile/>} />
+        <Route exact path='/contact' element={<Contact/>} />
+        <Route exact path='/product:id' element={<ProductDetail/>} />
+      </Routes>
+      <Foot/>
+    </Router>
   </React.StrictMode>
 );
 
