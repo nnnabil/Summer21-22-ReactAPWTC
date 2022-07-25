@@ -11,6 +11,9 @@ import Foot from "./Components/Foot";
 import Head from './Components/Head';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import ProductDetail from './Components/ProductDetail';
+import ColorState from './Components/ColorState';
+import EffectHookCheck from './Components/EffectHookCheck';
+import AllPosts from './Components/AllPosts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +25,9 @@ root.render(
         <Route exact path='/profile' element={<Profile/>} />
         <Route exact path='/contact' element={<Contact/>} />
         <Route exact path='/product:id' element={<ProductDetail/>} />
+        <Route exact path='/color' element={<ColorState/>} />
+        <Route exact path='/effect' element={<EffectHookCheck/>} />
+        <Route exact path='/posts' element={<AllPosts/>} />
       </Routes>
       <Foot/>
     </Router>
