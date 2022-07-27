@@ -15,6 +15,10 @@ import ColorState from './Components/ColorState';
 import EffectHookCheck from './Components/EffectHookCheck';
 import AllPosts from './Components/AllPosts';
 
+import Login from './Components/Login';
+import APIProducts from './Components/APIProducts';
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -28,6 +32,8 @@ root.render(
         <Route exact path='/color' element={<ColorState/>} />
         <Route exact path='/effect' element={<EffectHookCheck/>} />
         <Route exact path='/posts' element={<AllPosts/>} />
+        <Route exact path='/login' element={<Login/>} />
+        <Route exact path='/allproducts' element={<APIProducts/>} />
       </Routes>
       <Foot/>
     </Router>
