@@ -11,6 +11,7 @@ const Head = () => {
             <Link to="/posts">All Posts</Link>
             <Link to="/login">Login</Link>
             <Link to="/allproducts">Products</Link>
+            <Link to="/signout">SignOut</Link>
         </div>
     )
 }

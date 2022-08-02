@@ -17,6 +17,7 @@ import AllPosts from './Components/AllPosts';
 
 import Login from './Components/Login';
 import APIProducts from './Components/APIProducts';
+import SignOut from './Components/SignOut';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -34,6 +35,7 @@ root.render(
         <Route exact path='/posts' element={<AllPosts/>} />
         <Route exact path='/login' element={<Login/>} />
         <Route exact path='/allproducts' element={<APIProducts/>} />
+        <Route exact path='/signout' element={<SignOut/>} />
       </Routes>
       <Foot/>
     </Router>
